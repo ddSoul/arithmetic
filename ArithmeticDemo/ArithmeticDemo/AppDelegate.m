@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "ArithmeticListVC.h"
 
 @interface AppDelegate ()
 
@@ -22,8 +22,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [[ViewController alloc] init];
-    // Override point for customization after application launch.
+    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:[[ArithmeticListVC alloc] init]];
+    self.window.rootViewController = navigation;
+
     return YES;
 }
 

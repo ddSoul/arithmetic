@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7B36650621A534880058BBE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36650521A534880058BBE4 /* AppDelegate.m */; };
-		7B36650921A534880058BBE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36650821A534880058BBE4 /* ViewController.m */; };
 		7B36650E21A5348B0058BBE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B36650D21A5348B0058BBE4 /* Assets.xcassets */; };
 		7B36651421A5348B0058BBE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36651321A5348B0058BBE4 /* main.m */; };
 		7B36651E21A5348B0058BBE4 /* ArithmeticDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36651D21A5348B0058BBE4 /* ArithmeticDemoTests.m */; };
 		7B36652921A5348B0058BBE4 /* ArithmeticDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36652821A5348B0058BBE4 /* ArithmeticDemoUITests.m */; };
+		7B36653E21A5383E0058BBE4 /* ArithmeticListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36653B21A5383E0058BBE4 /* ArithmeticListVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 		7B36650121A534880058BBE4 /* ArithmeticDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArithmeticDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B36650421A534880058BBE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B36650521A534880058BBE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7B36650721A534880058BBE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7B36650821A534880058BBE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7B36650D21A5348B0058BBE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B36651221A5348B0058BBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B36651321A5348B0058BBE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		7B36652421A5348B0058BBE4 /* ArithmeticDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArithmeticDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B36652821A5348B0058BBE4 /* ArithmeticDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArithmeticDemoUITests.m; sourceTree = "<group>"; };
 		7B36652A21A5348B0058BBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B36653B21A5383E0058BBE4 /* ArithmeticListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArithmeticListVC.m; sourceTree = "<group>"; };
+		7B36653C21A5383E0058BBE4 /* ArithmeticListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArithmeticListVC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +97,9 @@
 		7B36650321A534880058BBE4 /* ArithmeticDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7B36653921A5383E0058BBE4 /* Section */,
 				7B36650421A534880058BBE4 /* AppDelegate.h */,
 				7B36650521A534880058BBE4 /* AppDelegate.m */,
-				7B36650721A534880058BBE4 /* ViewController.h */,
-				7B36650821A534880058BBE4 /* ViewController.m */,
 				7B36650D21A5348B0058BBE4 /* Assets.xcassets */,
 				7B36651221A5348B0058BBE4 /* Info.plist */,
 				7B36651321A5348B0058BBE4 /* main.m */,
@@ -124,6 +123,31 @@
 				7B36652A21A5348B0058BBE4 /* Info.plist */,
 			);
 			path = ArithmeticDemoUITests;
+			sourceTree = "<group>";
+		};
+		7B36653921A5383E0058BBE4 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				7B36653A21A5383E0058BBE4 /* Home */,
+				7B36653D21A5383E0058BBE4 /* Airthmetic */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		7B36653A21A5383E0058BBE4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7B36653C21A5383E0058BBE4 /* ArithmeticListVC.h */,
+				7B36653B21A5383E0058BBE4 /* ArithmeticListVC.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7B36653D21A5383E0058BBE4 /* Airthmetic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Airthmetic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B36650921A534880058BBE4 /* ViewController.m in Sources */,
+				7B36653E21A5383E0058BBE4 /* ArithmeticListVC.m in Sources */,
 				7B36651421A5348B0058BBE4 /* main.m in Sources */,
 				7B36650621A534880058BBE4 /* AppDelegate.m in Sources */,
 			);
