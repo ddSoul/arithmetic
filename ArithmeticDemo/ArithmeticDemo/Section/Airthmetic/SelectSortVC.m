@@ -1,32 +1,32 @@
 //
-//  BubbleSortVC.m
+//  SelectSortVC.m
 //  ArithmeticDemo
 //
-//  Created by ddSoul on 2018/11/21.
+//  Created by ddSoul on 2018/11/22.
 //  Copyright © 2018 dxl. All rights reserved.
 //
 
-#import "BubbleSortVC.h"
+#import "SelectSortVC.h"
 #import "ArithmeticHelper.h"
 
-@interface BubbleSortVC ()
+@interface SelectSortVC ()
 
 @end
 
-@implementation BubbleSortVC
+@implementation SelectSortVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        self.view.backgroundColor = UIColor.whiteColor;
+    self.view.backgroundColor = UIColor.whiteColor;
     
     int maxlen = 8;
     int array[8] = {7,3,31,13,1,5,6,9};
     
     printf("排序前的数组:::");
     printArray(array, maxlen);
-    
-    bubbleSort(array, maxlen);
-    
+//
+    selectSort(array, maxlen);
+//
     printf("排序后的数组:::");
     printArray(array, maxlen);
     
@@ -41,22 +41,25 @@
 //循环中::::1  3  5  6  7  9  13 31
 //循环中::::1  3  5  6  7  9  13 31
 
+
 //快速排序
-void bubbleSort(int array[], int maxlen) {
-    
-    int j;
+void selectSort(int array[], int maxlen) {
+
+    int j,min;
     for (int i = 0; i<maxlen; i++) {
+        min = i;
         for (j = i+1; j<maxlen; j++) {
-            if (array[i] > array[j]) {
-                swap(&array[i], &array[j]);
+            if (array[min] > array[j]) {
+                min = j;
+            }
+            if (i != min) {
+                swap(&array[i], &array[min]);
             }
         }
-        printf("循环中::::");
+        printf("_______循环中::::");
         printArray(array, maxlen);
     }
-    
+
 }
-
-
 
 @end

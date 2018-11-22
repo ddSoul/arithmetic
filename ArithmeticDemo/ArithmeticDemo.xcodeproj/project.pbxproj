@@ -16,6 +16,8 @@
 		7B36652921A5348B0058BBE4 /* ArithmeticDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36652821A5348B0058BBE4 /* ArithmeticDemoUITests.m */; };
 		7B36653E21A5383E0058BBE4 /* ArithmeticListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36653B21A5383E0058BBE4 /* ArithmeticListVC.m */; };
 		7B36654121A53DEF0058BBE4 /* BubbleSortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36654021A53DEF0058BBE4 /* BubbleSortVC.m */; };
+		7B36654D21A67FC20058BBE4 /* SelectSortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36654C21A67FC20058BBE4 /* SelectSortVC.m */; };
+		7B36655121A680550058BBE4 /* ArithmeticHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36655021A680550058BBE4 /* ArithmeticHelper.m */; };
 		B954F9D42C468C39E0F0E140 /* libPods-ArithmeticDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF02DD6CDE1786BBA9F70F8 /* libPods-ArithmeticDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,10 @@
 		7B36653C21A5383E0058BBE4 /* ArithmeticListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArithmeticListVC.h; sourceTree = "<group>"; };
 		7B36653F21A53DEF0058BBE4 /* BubbleSortVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSortVC.h; sourceTree = "<group>"; };
 		7B36654021A53DEF0058BBE4 /* BubbleSortVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubbleSortVC.m; sourceTree = "<group>"; };
+		7B36654B21A67FC20058BBE4 /* SelectSortVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectSortVC.h; sourceTree = "<group>"; };
+		7B36654C21A67FC20058BBE4 /* SelectSortVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectSortVC.m; sourceTree = "<group>"; };
+		7B36654F21A680550058BBE4 /* ArithmeticHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArithmeticHelper.h; sourceTree = "<group>"; };
+		7B36655021A680550058BBE4 /* ArithmeticHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArithmeticHelper.m; sourceTree = "<group>"; };
 		8F2E6A29F9C65B799E179C50 /* Pods-ArithmeticDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArithmeticDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArithmeticDemo/Pods-ArithmeticDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9FF02DD6CDE1786BBA9F70F8 /* libPods-ArithmeticDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArithmeticDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BE84EE01BC1F44DEE7ABA6 /* Pods-ArithmeticDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArithmeticDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArithmeticDemoTests/Pods-ArithmeticDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 		7B36653921A5383E0058BBE4 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				7B36654E21A680320058BBE4 /* Helper */,
 				7B36653A21A5383E0058BBE4 /* Home */,
 				7B36653D21A5383E0058BBE4 /* Airthmetic */,
 			);
@@ -168,8 +175,19 @@
 			children = (
 				7B36653F21A53DEF0058BBE4 /* BubbleSortVC.h */,
 				7B36654021A53DEF0058BBE4 /* BubbleSortVC.m */,
+				7B36654B21A67FC20058BBE4 /* SelectSortVC.h */,
+				7B36654C21A67FC20058BBE4 /* SelectSortVC.m */,
 			);
 			path = Airthmetic;
+			sourceTree = "<group>";
+		};
+		7B36654E21A680320058BBE4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7B36654F21A680550058BBE4 /* ArithmeticHelper.h */,
+				7B36655021A680550058BBE4 /* ArithmeticHelper.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		9C247A262705D5FE83D9BD07 /* Pods */ = {
@@ -516,6 +534,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B36653E21A5383E0058BBE4 /* ArithmeticListVC.m in Sources */,
+				7B36655121A680550058BBE4 /* ArithmeticHelper.m in Sources */,
+				7B36654D21A67FC20058BBE4 /* SelectSortVC.m in Sources */,
 				7B36651421A5348B0058BBE4 /* main.m in Sources */,
 				7B36654121A53DEF0058BBE4 /* BubbleSortVC.m in Sources */,
 				7B36650621A534880058BBE4 /* AppDelegate.m in Sources */,
