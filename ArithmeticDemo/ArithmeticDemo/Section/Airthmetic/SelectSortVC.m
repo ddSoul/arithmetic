@@ -41,7 +41,6 @@
 //循环中::::1  3  5  6  7  9  13 31
 //循环中::::1  3  5  6  7  9  13 31
 
-
 //快速排序
 void selectSort(int array[], int maxlen) {
 
