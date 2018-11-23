@@ -9,6 +9,7 @@
 #import "ArithmeticListVC.h"
 #import "SelectSortVC.h"
 #import "BubbleSortVC.h"
+#import "InsertSortVC.h"
 #import "Masonry.h"
 
 @interface ArithmeticListVC ()<UITableViewDelegate,UITableViewDataSource>
@@ -59,13 +60,16 @@
     }else if (1 == indexPath.row) {
         SelectSortVC *selectSortVC = [[SelectSortVC alloc] init];
         [self.navigationController pushViewController:selectSortVC animated:YES];
+    }else if (2 == indexPath.row) {
+        InsertSortVC *insertSortVC = [[InsertSortVC alloc] init];
+        [self.navigationController pushViewController:insertSortVC animated:YES];
     }
 
 }
 
 #pragma mark - custom Methods
 - (NSArray *)listData {
-    return @[@"冒泡",@"选择",@"???",@"???",@"???"];
+    return @[@"冒泡",@"选择",@"插入",@"???",@"???"];
 }
 
 #pragma mark - touch events
