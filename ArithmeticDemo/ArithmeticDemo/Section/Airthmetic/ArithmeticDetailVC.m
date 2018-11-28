@@ -32,7 +32,7 @@
         make.top.left.right.bottom.mas_equalTo(0);
     }];
     
-    NSLog(@"______%@",self.htmlString);
+//    NSLog(@"______%@",self.htmlString);
     
     [self.webView loadHTMLString:self.htmlString baseURL:nil];
 }
