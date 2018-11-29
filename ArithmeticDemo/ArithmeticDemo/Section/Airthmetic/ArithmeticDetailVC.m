@@ -11,7 +11,7 @@
 
 #import "Masonry.h"
 
-@interface ArithmeticDetailVC ()
+@interface ArithmeticDetailVC ()<WKUIDelegate>
 
 @property (nonatomic, strong) WKWebView *webView;
 
@@ -37,6 +37,12 @@
     [self.webView loadHTMLString:self.htmlString baseURL:nil];
 }
 
+#pragma mark - delelgate
+- (nullable WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures {
+    return self.webView;
+}
+
+#pragma mark - setter、getter
 - (WKWebView *)webView {
     if (!_webView) {
         _webView = [[WKWebView alloc] init];
