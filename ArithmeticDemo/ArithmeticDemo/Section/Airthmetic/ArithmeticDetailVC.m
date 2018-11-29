@@ -11,7 +11,7 @@
 
 #import "Masonry.h"
 
-@interface ArithmeticDetailVC ()<WKUIDelegate>
+@interface ArithmeticDetailVC ()<WKUIDelegate,WKNavigationDelegate>
 
 @property (nonatomic, strong) WKWebView *webView;
 
@@ -32,7 +32,6 @@
         make.top.left.right.bottom.mas_equalTo(0);
     }];
     
-//    NSLog(@"______%@",self.htmlString);
     
     [self.webView loadHTMLString:self.htmlString baseURL:nil];
 }
@@ -40,6 +39,9 @@
 #pragma mark - delelgate
 - (nullable WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures {
     return self.webView;
+}
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    
 }
 
 #pragma mark - setter、getter
