@@ -22,7 +22,7 @@ void printArray(int array[], int maxlen) {
     
     return;
 }
-
+//mrdeng commit
 //交换两个数
 void swap(int *a, int *b) {
     
